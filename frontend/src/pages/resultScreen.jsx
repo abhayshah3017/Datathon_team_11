@@ -59,7 +59,7 @@ const ResultScreen = () => {
                 </div>
                 <div className='align-center justify-center'>
                     <button
-                        className='text-white text-lg font-[600]'
+                        className='text-white text-lg font-[600] p-2'
                         style={{
                             backgroundColor: '#404ED1',
                             width: '280px',
