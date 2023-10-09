@@ -30,10 +30,9 @@ const ResultScreen = () => {
     const handleDownloadClick = () => {
         // Specify the file name and MIME type for your PDF file
         const fileURL = process.env.PUBLIC_URL + './Pipeline_deck.pptx';
-        const mimeType = 'application/pdf';
         const a = document.createElement('a');
         a.href = fileURL;
-        a.download = 'Pipeline_deck.pptx'; // You can set the desired filename here
+        a.download = 'Pipeline_deck(Annotated).pptx'; // You can set the desired filename here
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
