@@ -27,6 +27,7 @@ const FileInputCard2 = ({ binderFile, setBinderFile }) => {
                 // Convert the PPTX file to PDF using pptx2pdf
                 setImageIcon(pptIcon);
                 setBinderFile(selectedFile);
+                setIsPDF(false);
                 break;
             case 'application/zip':
             case 'application/x-zip-compressed':
@@ -36,6 +37,7 @@ const FileInputCard2 = ({ binderFile, setBinderFile }) => {
                 // setBinderFile(zipFile);
                 setImageIcon(zipIcon);
                 setBinderFile(selectedFile);
+                setIsPDF(false);
                 break;
             default:
                 toast.warn("Invalid file type. Please select a .pdf/.zip/.pptx file.", {
@@ -92,7 +94,7 @@ const FileInputCard2 = ({ binderFile, setBinderFile }) => {
                                         }}
                                     />
                                 </span> : <span>
-                                    <img style={{ height: '170px'}} src={imageIcon}></img>
+                                    <img style={{ height: '170px' }} src={imageIcon}></img>
                                 </span>}
                             </span>
                         </span>}

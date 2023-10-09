@@ -24,6 +24,7 @@ const FileInputCard1 = ({ deliverableFile, setDeliverableFile }) => {
       case 'application/vnd.openxmlformats-officedocument.presentationml.presentation':
         // Convert the PPTX file to PDF using pptx2pdf
         setImageIcon(pptIcon);
+        setIsPDF(false);
         setDeliverableFile(selectedFile);
         break;
       default:
