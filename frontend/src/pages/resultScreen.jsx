@@ -20,7 +20,7 @@ const ResultScreen = () => {
 
     useEffect(() => {
         // Load the file data when the component mounts
-        fetch('./ANNOTATED.pdf')
+        fetch('./Pipeline_deck.pptx')
             .then(response => response.blob())
             .then(blob => {
                 setResultFile(URL.createObjectURL(blob));
@@ -29,11 +29,11 @@ const ResultScreen = () => {
 
     const handleDownloadClick = () => {
         // Specify the file name and MIME type for your PDF file
-        const fileURL = process.env.PUBLIC_URL + './ANNOTATED.pdf';
+        const fileURL = process.env.PUBLIC_URL + './Pipeline_deck.pptx';
         const mimeType = 'application/pdf';
         const a = document.createElement('a');
         a.href = fileURL;
-        a.download = 'ANNOTATED.pdf'; // You can set the desired filename here
+        a.download = 'Pipeline_deck.pptx'; // You can set the desired filename here
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);

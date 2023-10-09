@@ -85,7 +85,7 @@ const FileInputCard1 = ({ deliverableFile, setDeliverableFile }) => {
             </span>}
         </div>
       </div>
-      {deliverableFile && <span className='pt-4'>Document</span>}
+      {deliverableFile && <span className='pt-4'>Document - {deliverableFile.name}</span>}
       {deliverableFile && <div className='flex' style={{ marginTop: '16px' }}>
         <label className="align-middle cursor-pointer">
           <input

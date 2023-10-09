@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
+import pptIcon from '../assets/pptx_icon.png';
 
 const ResultCard = ({ resultFile, setResultFile }) => {
 
@@ -8,7 +9,7 @@ const ResultCard = ({ resultFile, setResultFile }) => {
             <div className="bg-white rounded-lg overflow-hidden shadow-md" style={{ width: '166px', height: '200px' }}>
                 <div className="px-4">
                     {resultFile && <span>
-                        <span>
+                        {/* <span>
                             <DocViewer
                                 documents={[{
                                     uri: require('./ANNOTATED.pdf'),
@@ -26,7 +27,10 @@ const ResultCard = ({ resultFile, setResultFile }) => {
                                     },
                                     pdfVerticalScrollByDefault: false, // false as default
                                 }}
-                            /></span>
+                            /></span> */}
+                        <span>
+                            <img style={{ paddingTop: '30px' }} src={pptIcon}></img>
+                        </span>
                     </span>}
                 </div>
             </div>

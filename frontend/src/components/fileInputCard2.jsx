@@ -98,7 +98,7 @@ const FileInputCard2 = ({ binderFile, setBinderFile }) => {
                         </span>}
                 </div>
             </div>
-            {binderFile && <div className='pt-4'>Binder</div>}
+            {binderFile && <div className='pt-4'>Binder - {binderFile.name}</div>}
             {binderFile && <div className='flex' style={{ marginTop: '16px' }}>
                 <label className="align-middle cursor-pointer">
                     <input
