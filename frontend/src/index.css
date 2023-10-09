@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#pdf-controls {
+  display: none;
+}
+
+.App {
+  font-family: Inter;
+}
